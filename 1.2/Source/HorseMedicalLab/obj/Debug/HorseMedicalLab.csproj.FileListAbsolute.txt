@@ -1,0 +1,5 @@
+c:\GAMES\Rimworld\Mods\Horse\1.2\Assemblies\HorseMedicalLab.dll
+c:\GAMES\Rimworld\Mods\Horse\1.2\Source\HorseMedicalLab\obj\Debug\HorseMedicalLab.csprojAssemblyReference.cache
+c:\GAMES\Rimworld\Mods\Horse\1.2\Source\HorseMedicalLab\obj\Debug\HorseMedicalLab.csproj.CoreCompileInputs.cache
+c:\GAMES\Rimworld\Mods\Horse\1.2\Source\HorseMedicalLab\obj\Debug\HorseMedicalLab.csproj.CopyComplete
+c:\GAMES\Rimworld\Mods\Horse\1.2\Source\HorseMedicalLab\obj\Debug\HorseMedicalLab.dll
