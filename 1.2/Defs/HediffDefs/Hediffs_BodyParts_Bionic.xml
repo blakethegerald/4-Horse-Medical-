@@ -13,7 +13,7 @@
 		<stages>
 			<li>
 				<statOffsets>
-					<Insulation_Cold>15</Insulation_Cold>
+					<Insulation_Heat>15</Insulation_Heat>
 				</statOffsets>
 			</li>
 		</stages>
@@ -29,6 +29,9 @@
 		<thingSetMakerTags>
 			<li>RewardStandardMidFreq</li>
 		</thingSetMakerTags>
+		<graphicData>
+			<texPath>Things/Item/Health/SilverBulletMkOne</texPath>
+		</graphicData>
 	</ThingDef>
 
 	<RecipeDef ParentName="SurgeryInstallImplantBase">
@@ -75,5 +78,235 @@
 		<removesHediff>HRM_SilverBulletMkOne</removesHediff>
 	</RecipeDef>
 
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>HRM_SilverBulletMkTwo</defName>
+		<label>silver bullet Mk.2</label>
+		<labelNoun>a silver bullet Mk.2</labelNoun>
+		<description>An installed silver bullet Mk.2.</description>
+		<descriptionHyperlinks>
+			<ThingDef>HRM_SilverBulletMkTwo</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>HRM_SilverBulletMkTwo</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<statOffsets>
+					<Insulation_Heat>30</Insulation_Heat>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartBionicBaseNonCraftable">
+		<defName>HRM_SilverBulletMkTwo</defName>
+		<label>silver bullet Mk.2</label>
+		<description>silver bullet Mk.2</description>
+		<descriptionHyperlinks>
+			<RecipeDef>HRM_SilverBulletMkTwo</RecipeDef>
+		</descriptionHyperlinks>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+		<graphicData>
+			<texPath>Things/Item/Health/SilverBulletMkTwo</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
+		<defName>HRM_SilverBulletMkTwo</defName>
+		<label>install silver bullet Mk.2</label>
+		<description>Install an silver bullet Mk.2.</description>
+		<descriptionHyperlinks>
+			<ThingDef>HRM_SilverBulletMkTwo</ThingDef>
+			<HediffDef>HRM_SilverBulletMkTwo</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing silver bullet Mk.2.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>HRM_SilverBulletMkTwo</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>HRM_SilverBulletMkTwo</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Torso</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>HRM_SilverBulletMkTwo</addsHediff>
+		<skillRequirements>
+			<Medicine>11</Medicine>
+		</skillRequirements>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryRemoveImplantBase">
+		<defName>HRM_RemoveSilverBulletMkTwo</defName>
+		<label>remove silver bullet Mk.2</label>
+		<description>Remove silver bullet Mk.2.</description>
+		<descriptionHyperlinks>
+			<ThingDef>HRM_SilverBulletMkTwo</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Removing silver bullet Mk.2.</jobString>
+		<removesHediff>HRM_SilverBulletMkTwo</removesHediff>
+	</RecipeDef>
+
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>HRM_ChestHeaterMkOne</defName>
+		<label>chest heater Mk.1</label>
+		<labelNoun>a chest heater Mk.1</labelNoun>
+		<description>An installed chest heater Mk.1.</description>
+		<descriptionHyperlinks>
+			<ThingDef>HRM_ChestHeaterMkOne</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>HRM_ChestHeaterMkOne</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<statOffsets>
+					<Insulation_Cold>15</Insulation_Cold>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartBionicBaseNonCraftable">
+		<defName>HRM_ChestHeaterMkOne</defName>
+		<label>chest heater Mk.1</label>
+		<description>chest heater Mk.1</description>
+		<descriptionHyperlinks>
+			<RecipeDef>HRM_ChestHeaterMkOne</RecipeDef>
+		</descriptionHyperlinks>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+		<graphicData>
+			<texPath>Things/Item/Health/ChestHeaterMkOne</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
+		<defName>HRM_ChestHeaterMkOne</defName>
+		<label>install chest heater Mk.1</label>
+		<description>Install an chest heater Mk.1.</description>
+		<descriptionHyperlinks>
+			<ThingDef>HRM_ChestHeaterMkOne</ThingDef>
+			<HediffDef>HRM_ChestHeaterMkOne</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing chest heater Mk.1.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>HRM_ChestHeaterMkOne</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>HRM_ChestHeaterMkOne</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Torso</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>HRM_ChestHeaterMkOne</addsHediff>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryRemoveImplantBase">
+		<defName>HRM_RemoveChestHeaterMkOne</defName>
+		<label>remove chest heater Mk.1</label>
+		<description>Remove chest heater Mk.1.</description>
+		<descriptionHyperlinks>
+			<ThingDef>HRM_ChestHeaterMkOne</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Removing chest heater Mk.1.</jobString>
+		<removesHediff>HRM_ChestHeaterMkOne</removesHediff>
+	</RecipeDef>
+
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>HRM_ChestHeaterMkTwo</defName>
+		<label>chest heater Mk.2</label>
+		<labelNoun>a chest heater Mk.2</labelNoun>
+		<description>An installed chest heater Mk.2.</description>
+		<descriptionHyperlinks>
+			<ThingDef>HRM_ChestHeaterMkTwo</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>HRM_ChestHeaterMkTwo</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<statOffsets>
+					<Insulation_Cold>30</Insulation_Cold>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartBionicBaseNonCraftable">
+		<defName>HRM_ChestHeaterMkTwo</defName>
+		<label>chest heater Mk.2</label>
+		<description>chest heater Mk.2</description>
+		<descriptionHyperlinks>
+			<RecipeDef>HRM_ChestHeaterMkTwo</RecipeDef>
+		</descriptionHyperlinks>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+		<graphicData>
+			<texPath>Things/Item/Health/ChestHeaterMkTwo</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
+		<defName>HRM_ChestHeaterMkTwo</defName>
+		<label>install chest heater Mk.2</label>
+		<description>Install an chest heater Mk.2.</description>
+		<descriptionHyperlinks>
+			<ThingDef>HRM_ChestHeaterMkTwo</ThingDef>
+			<HediffDef>HRM_ChestHeaterMkTwo</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing chest heater Mk.2.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>HRM_ChestHeaterMkTwo</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>HRM_ChestHeaterMkTwo</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Torso</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>HRM_ChestHeaterMkTwo</addsHediff>
+		<skillRequirements>
+			<Medicine>11</Medicine>
+		</skillRequirements>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryRemoveImplantBase">
+		<defName>HRM_RemoveChestHeaterMkTwo</defName>
+		<label>remove chest heater Mk.2</label>
+		<description>Remove chest heater Mk.2.</description>
+		<descriptionHyperlinks>
+			<ThingDef>HRM_ChestHeaterMkTwo</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Removing chest heater Mk.2.</jobString>
+		<removesHediff>HRM_ChestHeaterMkTwo</removesHediff>
+	</RecipeDef>
 
 </Defs>

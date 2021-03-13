@@ -9,6 +9,90 @@ using Verse;
 
 namespace HorseMedicalLab
 {
+	[HarmonyPatch(typeof(HealthUtility), "AdjustSeverity")]
+	public class AdjustSeverity_Patch
+	{
+		public static bool Prefix(Pawn pawn, HediffDef hdDef, ref float sevOffset)
+		{
+			if (hdDef == HediffDefOf.Heatstroke)
+            {
+				foreach (var hediff in pawn.health.hediffSet.hediffs)
+                {
+					if (hediff.def == HML_DefOf.HRM_SilverBulletMkOne)
+                    {
+						var severity = pawn.GetSeverityFrom(hdDef);
+						if (severity + sevOffset >= 0.62f)
+                        {
+							return false;
+                        }
+					}
+					else if (hediff.def == HML_DefOf.HRM_SilverBulletMkTwo)
+					{
+						var severity = pawn.GetSeverityFrom(hdDef);
+						if (severity + sevOffset >= 0.35f)
+						{
+							return false;
+						}
+					}
+				}
+            }
+			else if (hdDef == HediffDefOf.Hypothermia)
+            {
+				foreach (var hediff in pawn.health.hediffSet.hediffs)
+				{
+					if (hediff.def == HML_DefOf.HRM_ChestHeaterMkOne)
+					{
+						var severity = pawn.GetSeverityFrom(hdDef);
+						if (severity + sevOffset >= 0.62f)
+						{
+							return false;
+						}
+					}
+					else if (hediff.def == HML_DefOf.HRM_ChestHeaterMkTwo)
+                    {
+						var severity = pawn.GetSeverityFrom(hdDef);
+						if (severity + sevOffset >= 0.35f)
+						{
+							return false;
+						}
+					}
+				}
+			}
+			return true;
+		}
+	}
+
+	[HarmonyPatch(typeof(Thing), "TakeDamage")]
+	public class TakeDamage_Patch
+	{
+		public static bool Prefix(Thing __instance, DamageInfo dinfo)
+		{
+			if (dinfo.Def == DamageDefOf.Frostbite && __instance is Pawn pawn)
+			{
+				foreach (var hediff in pawn.health.hediffSet.hediffs)
+				{
+					if (hediff.def == HML_DefOf.HRM_ChestHeaterMkOne)
+					{
+						var severity = pawn.GetSeverityFrom(HediffDefOf.Hypothermia);
+						if (severity < 0.35f)
+                        {
+							return false;
+                        }
+					}
+					else if (hediff.def == HML_DefOf.HRM_ChestHeaterMkTwo)
+                    {
+						var severity = pawn.GetSeverityFrom(HediffDefOf.Hypothermia);
+						if (severity < 0.62f)
+						{
+							return false;
+						}
+					}
+				}
+			}
+			return true;
+		}
+	}
+
 	[HarmonyPatch(typeof(ThoughtWorker_BodyPuristDisgust), "CurrentSocialStateInternal")]
 	public class ThoughtWorker_BodyPuristDisgust_Patch
 	{
