@@ -309,4 +309,488 @@
 		<removesHediff>HRM_ChestHeaterMkTwo</removesHediff>
 	</RecipeDef>
 
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>HRM_TraumaLifeSaver</defName>
+		<label>trauma lifesaver</label>
+		<labelNoun>a trauma lifesaver</labelNoun>
+		<description>An installed trauma lifesaver.</description>
+		<descriptionHyperlinks>
+			<ThingDef>HRM_TraumaLifeSaver</ThingDef>
+		</descriptionHyperlinks>
+		<hediffClass>HorseMedicalLab.Hediff_TraumaLifesaver</hediffClass>
+		<spawnThingOnRemoved>HRM_TraumaLifeSaver</spawnThingOnRemoved>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartBionicBaseNonCraftable">
+		<defName>HRM_TraumaLifeSaver</defName>
+		<label>trauma lifesaver</label>
+		<description>trauma lifesaver</description>
+		<descriptionHyperlinks>
+			<RecipeDef>HRM_TraumaLifeSaver</RecipeDef>
+		</descriptionHyperlinks>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+		<graphicData>
+			<texPath>Things/Item/Health/TraumaLifeSaver</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
+		<defName>HRM_TraumaLifeSaver</defName>
+		<label>install trauma lifesaver</label>
+		<description>Install an trauma lifesaver.</description>
+		<descriptionHyperlinks>
+			<ThingDef>HRM_TraumaLifeSaver</ThingDef>
+			<HediffDef>HRM_TraumaLifeSaver</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing trauma lifesaver.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>HRM_TraumaLifeSaver</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>HRM_TraumaLifeSaver</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Torso</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>HRM_TraumaLifeSaver</addsHediff>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryRemoveImplantBase">
+		<defName>HRM_RemoveTraumaLifeSaver</defName>
+		<label>remove trauma lifesaver</label>
+		<description>Remove trauma lifesaver.</description>
+		<descriptionHyperlinks>
+			<ThingDef>HRM_TraumaLifeSaver</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Removing trauma lifesaver.</jobString>
+		<removesHediff>HRM_TraumaLifeSaver</removesHediff>
+	</RecipeDef>
+
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>HRM_AdrenalineGland</defName>
+		<label>adrenaline gland</label>
+		<labelNoun>a adrenaline gland</labelNoun>
+		<description>An installed adrenaline gland.</description>
+		<descriptionHyperlinks>
+			<ThingDef>HRM_AdrenalineGland</ThingDef>
+		</descriptionHyperlinks>
+		<hediffClass>HorseMedicalLab.Hediff_AdrenalineGland</hediffClass>
+		<spawnThingOnRemoved>HRM_AdrenalineGland</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<label>inactive</label>
+			</li>
+			<li>
+				<minSeverity>0.5</minSeverity>
+				<label>active</label>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>1.5</postFactor>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartBionicBaseNonCraftable">
+		<defName>HRM_AdrenalineGland</defName>
+		<label>adrenaline gland</label>
+		<description>adrenaline gland</description>
+		<descriptionHyperlinks>
+			<RecipeDef>HRM_AdrenalineGland</RecipeDef>
+		</descriptionHyperlinks>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+		<graphicData>
+			<texPath>Things/Item/Health/AdrenalineGland</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
+		<defName>HRM_AdrenalineGland</defName>
+		<label>install adrenaline gland</label>
+		<description>Install an adrenaline gland.</description>
+		<descriptionHyperlinks>
+			<ThingDef>HRM_AdrenalineGland</ThingDef>
+			<HediffDef>HRM_AdrenalineGland</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing adrenaline gland.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>HRM_AdrenalineGland</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>HRM_AdrenalineGland</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Torso</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>HRM_AdrenalineGland</addsHediff>
+		<skillRequirements>
+			<Medicine>12</Medicine>
+		</skillRequirements>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryRemoveImplantBase">
+		<defName>HRM_RemoveAdrenalineGland</defName>
+		<label>remove adrenaline gland</label>
+		<description>Remove adrenaline gland.</description>
+		<descriptionHyperlinks>
+			<ThingDef>HRM_AdrenalineGland</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Removing adrenaline gland.</jobString>
+		<removesHediff>HRM_AdrenalineGland</removesHediff>
+	</RecipeDef>
+
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>HRM_SyntheticBoneStructure</defName>
+		<label>synthetic bone structure</label>
+		<labelNoun>a synthetic bone structure</labelNoun>
+		<description>An installed synthetic bone structure.</description>
+		<descriptionHyperlinks>
+			<ThingDef>HRM_SyntheticBoneStructure</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>HRM_SyntheticBoneStructure</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<statOffsets>
+					<Insulation_Heat>15</Insulation_Heat>
+					<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.30</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartBionicBaseNonCraftable">
+		<defName>HRM_SyntheticBoneStructure</defName>
+		<label>synthetic bone structure</label>
+		<description>synthetic bone structure</description>
+		<descriptionHyperlinks>
+			<RecipeDef>HRM_SyntheticBoneStructure</RecipeDef>
+		</descriptionHyperlinks>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+		<graphicData>
+			<texPath>Things/Item/Health/SyntheticBoneStructure</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
+		<defName>HRM_SyntheticBoneStructure</defName>
+		<label>install synthetic bone structure</label>
+		<description>Install an synthetic bone structure.</description>
+		<descriptionHyperlinks>
+			<ThingDef>HRM_SyntheticBoneStructure</ThingDef>
+			<HediffDef>HRM_SyntheticBoneStructure</HediffDef>
+		</descriptionHyperlinks>
+		<workerClass>HorseMedicalLab.Recipe_InstallArtificialBodyPartPsychotic</workerClass>
+		<jobString>Installing synthetic bone structure.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>HRM_SyntheticBoneStructure</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>HRM_SyntheticBoneStructure</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Torso</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>HRM_SyntheticBoneStructure</addsHediff>
+		<skillRequirements>
+			<Medicine>14</Medicine>
+		</skillRequirements>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryRemoveImplantBase">
+		<defName>HRM_RemoveSyntheticBoneStructure</defName>
+		<label>remove synthetic bone structure</label>
+		<description>Remove synthetic bone structure.</description>
+		<descriptionHyperlinks>
+			<ThingDef>HRM_SyntheticBoneStructure</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Removing synthetic bone structure.</jobString>
+		<removesHediff>HRM_SyntheticBoneStructure</removesHediff>
+	</RecipeDef>
+
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>HRM_SyntheticMusculatureAndTendons</defName>
+		<label>synthetic musculature and tendons</label>
+		<labelNoun>a synthetic musculature and tendons</labelNoun>
+		<description>An installed synthetic musculature and tendons.</description>
+		<descriptionHyperlinks>
+			<ThingDef>HRM_SyntheticMusculatureAndTendons</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>HRM_SyntheticMusculatureAndTendons</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<statOffsets>
+					<Insulation_Heat>15</Insulation_Heat>
+					<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+					<ArmorRating_Heat>0.30</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartBionicBaseNonCraftable">
+		<defName>HRM_SyntheticMusculatureAndTendons</defName>
+		<label>synthetic musculature and tendons</label>
+		<description>synthetic musculature and tendons</description>
+		<descriptionHyperlinks>
+			<RecipeDef>HRM_SyntheticMusculatureAndTendons</RecipeDef>
+		</descriptionHyperlinks>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+		<graphicData>
+			<texPath>Things/Item/Health/SyntheticMusculatureAndTendons</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
+		<defName>HRM_SyntheticMusculatureAndTendons</defName>
+		<label>install synthetic musculature and tendons</label>
+		<description>Install an synthetic musculature and tendons.</description>
+		<descriptionHyperlinks>
+			<ThingDef>HRM_SyntheticMusculatureAndTendons</ThingDef>
+			<HediffDef>HRM_SyntheticMusculatureAndTendons</HediffDef>
+		</descriptionHyperlinks>
+		<workerClass>HorseMedicalLab.Recipe_InstallArtificialBodyPartParalysis</workerClass>
+		<jobString>Installing synthetic musculature and tendons.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>HRM_SyntheticMusculatureAndTendons</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>HRM_SyntheticMusculatureAndTendons</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Torso</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>HRM_SyntheticMusculatureAndTendons</addsHediff>
+		<skillRequirements>
+			<Medicine>14</Medicine>
+		</skillRequirements>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryRemoveImplantBase">
+		<defName>HRM_RemoveSyntheticMusculatureAndTendons</defName>
+		<label>remove synthetic musculature and tendons</label>
+		<description>Remove synthetic musculature and tendons.</description>
+		<descriptionHyperlinks>
+			<ThingDef>HRM_SyntheticMusculatureAndTendons</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Removing synthetic musculature and tendons.</jobString>
+		<removesHediff>HRM_SyntheticMusculatureAndTendons</removesHediff>
+	</RecipeDef>
+
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>HRM_SyntheticSkin</defName>
+		<label>synthetic skin</label>
+		<labelNoun>a synthetic skin</labelNoun>
+		<description>An installed synthetic skin.</description>
+		<descriptionHyperlinks>
+			<ThingDef>HRM_SyntheticSkin</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>HRM_SyntheticSkin</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<statOffsets>
+					<Insulation_Heat>15</Insulation_Heat>
+					<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.30</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartBionicBaseNonCraftable">
+		<defName>HRM_SyntheticSkin</defName>
+		<label>synthetic skin</label>
+		<description>synthetic skin</description>
+		<descriptionHyperlinks>
+			<RecipeDef>HRM_SyntheticSkin</RecipeDef>
+		</descriptionHyperlinks>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+		<graphicData>
+			<texPath>Things/Item/Health/SyntheticSkin</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
+		<defName>HRM_SyntheticSkin</defName>
+		<label>install synthetic skin</label>
+		<description>Install an synthetic skin.</description>
+		<descriptionHyperlinks>
+			<ThingDef>HRM_SyntheticSkin</ThingDef>
+			<HediffDef>HRM_SyntheticSkin</HediffDef>
+		</descriptionHyperlinks>
+		<workerClass>HorseMedicalLab.Recipe_InstallArtificialBodyPartBerserk</workerClass>
+		<jobString>Installing synthetic skin.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>HRM_SyntheticSkin</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>HRM_SyntheticSkin</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Torso</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>HRM_SyntheticSkin</addsHediff>
+		<skillRequirements>
+			<Medicine>14</Medicine>
+		</skillRequirements>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryRemoveImplantBase">
+		<defName>HRM_RemoveSyntheticSkin</defName>
+		<label>remove synthetic skin</label>
+		<description>Remove synthetic skin.</description>
+		<descriptionHyperlinks>
+			<ThingDef>HRM_SyntheticSkin</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Removing synthetic skin.</jobString>
+		<removesHediff>HRM_SyntheticSkin</removesHediff>
+	</RecipeDef>
+
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>HRM_SlaverRewire</defName>
+		<label>slaver rewire</label>
+		<labelNoun>a slaver rewire</labelNoun>
+		<description>An installed slaver rewire.</description>
+		<descriptionHyperlinks>
+			<ThingDef>HRM_SlaverRewire</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>HRM_SlaverRewire</spawnThingOnRemoved>
+		<hediffClass>HorseMedicalLab.Hediff_SlaveRewire</hediffClass>
+		<initialSeverity>0</initialSeverity>
+		<stages>
+			<li>
+				<label>active</label>
+			</li>
+			<li>
+				<minSeverity>0.5</minSeverity>
+				<label>shut down</label>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.1</setMax>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartBionicBaseNonCraftable">
+		<defName>HRM_SlaverRewire</defName>
+		<label>slaver rewire</label>
+		<description>slaver rewire</description>
+		<descriptionHyperlinks>
+			<RecipeDef>HRM_SlaverRewire</RecipeDef>
+		</descriptionHyperlinks>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+		<graphicData>
+			<texPath>Things/Item/Health/SlaverRewire</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
+		<defName>HRM_SlaverRewire</defName>
+		<label>install slaver rewire</label>
+		<description>Install an slaver rewire.</description>
+		<descriptionHyperlinks>
+			<ThingDef>HRM_SlaverRewire</ThingDef>
+			<HediffDef>HRM_SlaverRewire</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing slaver rewire.</jobString>
+		<workerClass>HorseMedicalLab.Recipe_InstallArtificialBodyPartDeath</workerClass>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>HRM_SlaverRewire</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>HRM_SlaverRewire</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Head</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>HRM_SlaverRewire</addsHediff>
+		<skillRequirements>
+			<Medicine>12</Medicine>
+		</skillRequirements>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryRemoveImplantBase">
+		<defName>HRM_RemoveSlaverRewire</defName>
+		<label>remove slaver rewire</label>
+		<description>Remove slaver rewire.</description>
+		<descriptionHyperlinks>
+			<ThingDef>HRM_SlaverRewire</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Removing slaver rewire.</jobString>
+		<removesHediff>HRM_SlaverRewire</removesHediff>
+	</RecipeDef>
 </Defs>

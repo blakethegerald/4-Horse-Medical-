@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ApparelBase">
+    <defName>HRM_AlletrimAgenenosineRespirator</defName>
+    <label>alletrim agenenosine respirator</label>
+    <description>A vest with armor plates inserted on the chest and back. While quite effective at deflecting gunshots and stabbing attacks against the chest, it does nothing to protect the limbs.</description>
+    <techLevel>Industrial</techLevel>
+	<thingClass>HorseMedicalLab.Apparel_Respirator</thingClass>
+	<tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Things/Item/Apparel/AlletrimAgenenosineRespirator/AlletrimAgenenosineRespirator</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.90</drawSize>
+    </graphicData>
+    <statBases>
+      <WorkToMake>9000</WorkToMake>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Mass>4</Mass>
+      <Flammability>0.6</Flammability>
+      <EquipDelay>5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.12</MoveSpeed>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Item/Apparel/AlletrimAgenenosineRespirator/AlletrimAgenenosineRespirator</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+      </layers>
+    </apparel>
+  </ThingDef>
+  
+  <HediffDef ParentName="DiseaseBase">
+    <defName>HRM_MedicalInducedComa</defName>
+    <label>medical induced coma</label>
+    <description>.</description>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+        <painFactor>0</painFactor>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.01</setMax>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  <HediffDef ParentName="DiseaseBase">
+    <defName>HRM_Sedated</defName>
+    <label>sedated</label>
+    <description>.</description>
+    <isBad>false</isBad>
+	<hediffClass>HorseMedicalLab.HediffDuration</hediffClass>
+    <stages>
+      <li>
+        <painFactor>0</painFactor>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.01</setMax>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+</Defs>

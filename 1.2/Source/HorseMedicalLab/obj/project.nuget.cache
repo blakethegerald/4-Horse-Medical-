@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CUF6pYzm6jMMfyWHmis5o62w2OIhAGJsUq0sfjrFnnwtOyjJhvkVHTmwy2Z6ALJPWQrB8xM5EZOMc3fHdpGcAg==",
+  "dgSpecHash": "bYKm0XuZKBeggHEiYtUDBGebNKzK4UQreZOallEpRxe3R8Hywr5b5Uhn6FDD+w24Krc2I73uf+kcSTnXox07OA==",
   "success": true,
-  "projectFilePath": "c:\\GAMES\\Rimworld\\Mods\\4-Horse-Medical-\\1.2\\Source\\HorseMedicalLab\\HorseMedicalLab.csproj",
+  "projectFilePath": "C:\\GAMES\\Rimworld\\Mods\\4-Horse-Medical-\\1.2\\Source\\HorseMedicalLab\\HorseMedicalLab.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Vova\\.nuget\\packages\\krafs.rimworld.ref\\1.2.2900\\krafs.rimworld.ref.1.2.2900.nupkg.sha512",
     "C:\\Users\\Vova\\.nuget\\packages\\lib.harmony\\2.0.4\\lib.harmony.2.0.4.nupkg.sha512"

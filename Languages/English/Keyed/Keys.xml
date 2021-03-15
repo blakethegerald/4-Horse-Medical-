@@ -1,3 +1,6 @@
 <LanguageData>
-
+	<HML.ChooseActiveWorkType>Choose active work type</HML.ChooseActiveWorkType>
+	<HML.ChooseActiveWorkTypeDesc>Choose active work type</HML.ChooseActiveWorkTypeDesc>
+	<HML.ShutDown>Shut down</HML.ShutDown>
+	<HML.ShutDownDesc>Shut down</HML.ShutDownDesc>
 </LanguageData>

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\GAMES\\Rimworld\\Mods\\4-Horse-Medical-\\1.2\\Source\\HorseMedicalLab\\HorseMedicalLab.csproj": {}
+    "C:\\GAMES\\Rimworld\\Mods\\4-Horse-Medical-\\1.2\\Source\\HorseMedicalLab\\HorseMedicalLab.csproj": {}
   },
   "projects": {
-    "c:\\GAMES\\Rimworld\\Mods\\4-Horse-Medical-\\1.2\\Source\\HorseMedicalLab\\HorseMedicalLab.csproj": {
+    "C:\\GAMES\\Rimworld\\Mods\\4-Horse-Medical-\\1.2\\Source\\HorseMedicalLab\\HorseMedicalLab.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\GAMES\\Rimworld\\Mods\\4-Horse-Medical-\\1.2\\Source\\HorseMedicalLab\\HorseMedicalLab.csproj",
+        "projectUniqueName": "C:\\GAMES\\Rimworld\\Mods\\4-Horse-Medical-\\1.2\\Source\\HorseMedicalLab\\HorseMedicalLab.csproj",
         "projectName": "HorseMedicalLab",
-        "projectPath": "c:\\GAMES\\Rimworld\\Mods\\4-Horse-Medical-\\1.2\\Source\\HorseMedicalLab\\HorseMedicalLab.csproj",
+        "projectPath": "C:\\GAMES\\Rimworld\\Mods\\4-Horse-Medical-\\1.2\\Source\\HorseMedicalLab\\HorseMedicalLab.csproj",
         "packagesPath": "C:\\Users\\Vova\\.nuget\\packages\\",
-        "outputPath": "c:\\GAMES\\Rimworld\\Mods\\4-Horse-Medical-\\1.2\\Source\\HorseMedicalLab\\obj\\",
+        "outputPath": "C:\\GAMES\\Rimworld\\Mods\\4-Horse-Medical-\\1.2\\Source\\HorseMedicalLab\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [

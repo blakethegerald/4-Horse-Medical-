@@ -41,8 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HarmonyPatches\Health_Patches.cs" />
+    <Compile Include="Comps\IngestionOutcomeDoer_GiveHediffWithDrawback.cs" />
+    <Compile Include="HarmonyPatches\Patches.cs" />
     <Compile Include="HarmonyPatches\HarmonyInit.cs" />
+    <Compile Include="Hediffs\Hediff_AdrenalineGland.cs" />
+    <Compile Include="Hediffs\Hediff_SlaveRewire.cs" />
+    <Compile Include="Hediffs\Hediff_Exedene.cs" />
+    <Compile Include="Hediffs\Hediff_TraumaLifesaver.cs" />
+    <Compile Include="RecipeWorkers\Recipe_InstallArtificialBodyPartWithCatastrophicOutcome.cs" />
+    <Compile Include="Things\Hediff_TraumaLifesaver.cs" />
     <Compile Include="Utils.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
